@@ -1,0 +1,29 @@
+Part 3 — Exploitation
+Student: Joyce Fu (netID: jf5456)
+Repository: <https://github.com/NYUAppSec/appsec-homework-1-fufujoyce>
+Date: <YYYY-MM-DD>
+
+Summary
+-------
+One-paragraph summary of the vulnerability you explored and the high-level exploit goal 
+
+Vulnerability description
+-------------------------
+
+Exploit approach
+----------------
+
+Exploit details (optional technical details)
+-------------------------------------------
+
+Impact
+------
+
+Mitigations & fixes
+-------------------
+
+Responsible disclosure (if applicable)
+-------------------------------------
+
+References
+----------

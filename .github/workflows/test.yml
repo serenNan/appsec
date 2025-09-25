@@ -1,0 +1,35 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: echo "Hello world"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y build-essential gcc
+
+    - name: Build giftcardreader
+      run: make clean && make
+
+    - name: Run giftcardreader test script
+      run: |
+        echo "Running giftcardreader test script..."
+        ./runtests.sh
+
+    - name: Run full test suite
+      run: make test
